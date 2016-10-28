@@ -69,7 +69,7 @@ def handle_messgae(today_entry_impr_users,today_entry_click_users):
                         today_entry_impr_users.get(last_date_str,{}).clear()
                     if last_date_str in today_entry_click_users:
                         today_entry_click_users.get(last_date_str,{}).clear()
-                    today_entry_impr_users.setdefault(now_date_str,manager.dict())
+                    today_entry_impr_users.setdefault(notow_date_str,manager.dict())
                     today_entry_click_users.setdefault(now_date_str,manager.dict())
                     today_impr_users = today_entry_impr_users[now_date_str]
                     today_click_users = today_entry_click_users[now_date_str]
